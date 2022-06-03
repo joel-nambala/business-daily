@@ -1,0 +1,27 @@
+{
+  "name": "business-daily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compress": "node-sass css/style.css css/style.mi.css --output-style compressed",
+    "build": "npm-run-all compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-nambala/business-daily.git"
+  },
+  "author": "Joel Nambala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-nambala/business-daily/issues"
+  },
+  "homepage": "https://github.com/joel-nambala/business-daily#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
