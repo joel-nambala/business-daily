@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devserver": "live-server",
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "live-server",
     "compress": "node-sass css/style.css css/style.mi.css --output-style compressed",
     "build": "npm-run-all compress"
   },

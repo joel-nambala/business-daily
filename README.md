@@ -1,1 +1,1 @@
-# business-daily
+# Business daily

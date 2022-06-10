@@ -4,21 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Font awesome -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- Google font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <!-- CSS links -->
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- JavaScript links -->
     <script defer src="js/script.js"></script>
-    <title>Business daily</title>
+    <title>Business Daily</title>
   </head>
-  <body></body>
+  <body>
+    <!-- WATCH DEMO -->
+    <section id="demo" class="demo">
+      <div class="container">
+        <header class="demo-header head-flex">
+          <h2 class="demo-heading heading-secondary">Watch our promo video</h2>
+          <p class="demo-paragraph heading-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            illum soluta sequi quaerat aperiam, atque a nam culpa facilis
+            excepturi.
+          </p>
+        </header>
+        <article class="demo-body">
+          <i class="fa-solid fa-xmark demo-close"></i>
+          <figure class="demo-photo">
+            <img
+              src="img/video-bg.png"
+              alt="Woman using a smartphone"
+              class="demo-img"
+            />
+            <button class="demo-watch">watch demo</button>
+          </figure>
+        </article>
+        <aside class="iframe">
+          <iframe
+            class="iframe-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/r44RKWyfcFw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <header class="pricing-header head-flex">
+          <h2 class="pricing-heading heading-secondary">Our pricing</h2>
+          <p class="pricing-paragraph heading-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            assumenda quos vitae, id cupiditate nam veritatis vel ab explicabo
+            laborum.
+          </p>
+        </header>
+        <article class="pricing-body">
+          <div class="pricing-card">
+            <h3 class="pricing-state">Starter</h3>
+            <p class="pricing-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              porro excepturi?
+            </p>
+            <p class="pricing-price"><sup>$</sup><strong>0</strong>/month</p>
+            <button class="btn btn-starter">start free trial</button>
+            <ul class="pricing-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-state">Exclusive</h3>
+            <p class="pricing-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              porro excepturi?
+            </p>
+            <p class="pricing-price"><sup>$</sup><strong>120</strong>/month</p>
+            <button class="btn btn-exclusive">start free trial</button>
+            <ul class="pricing-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-state">Premium</h3>
+            <p class="pricing-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              porro excepturi?
+            </p>
+            <p class="pricing-price"><sup>$</sup><strong>233</strong>/month</p>
+            <button class="btn btn-premium">start free trial</button>
+            <ul class="pricing-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

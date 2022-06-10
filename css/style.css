@@ -1,0 +1,209 @@
+/* 
+Main color - #1864ab
+Color grey - #343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+/******************/
+/* GENERAL STYLES */
+/******************/
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.head-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.4rem;
+  text-transform: capitalize;
+  margin-top: 6rem;
+}
+
+.heading-text {
+  width: 50%;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.btn {
+  border: 2px solid #1864ab;
+  padding: 1.2rem 2.4rem;
+  background-color: #fff;
+  color: #1864ab;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+
+.btn:hover {
+  background-color: #1864ab;
+  color: #fff;
+}
+
+/******************/
+/* WATCH DEMO */
+/******************/
+.demo {
+  background-color: #f8f9fa;
+}
+
+.demo-photo {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.demo-img {
+  display: block;
+  width: 80rem;
+  margin: 0 auto;
+  border-radius: 1.2rem;
+}
+
+.demo-watch {
+  border: none;
+  background-color: #1864ab;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+}
+
+.iframe iframe {
+  width: 70rem;
+  height: 40rem;
+}
+
+.demo-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* backdrop-filter: blur(3px); */
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.8s;
+}
+
+.demo-close {
+  color: #fff;
+  font-size: 3rem;
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/******************/
+/* PRICING */
+/******************/
+.pricing-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 4rem;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+}
+
+.pricing-card {
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pricing-state {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.pricing-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.pricing-price {
+  font-size: 1.6rem;
+}
+
+.pricing-price strong {
+  font-size: 2.8rem;
+}
+
+.btn-exclusive {
+  background-color: #1864ab;
+  color: #fff;
+}
+
+.btn-exclusive:hover {
+  background-color: #1971c2;
+  border: 2px solid #1971c2;
+}
+
+.pricing-list {
+  align-self: flex-start;
+  list-style: none;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.pricing-list li {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pricing-list li i {
+  color: #1864ab;
+}
