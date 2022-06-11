@@ -14,9 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
     <!-- CSS links -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <!-- JavaScript links -->
+    <script defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
     <script defer src="js/script.js"></script>
     <title>Business Daily</title>
   </head>
@@ -27,9 +40,9 @@
         <header class="demo-header head-flex">
           <h2 class="demo-heading heading-secondary">Watch our promo video</h2>
           <p class="demo-paragraph heading-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            illum soluta sequi quaerat aperiam, atque a nam culpa facilis
-            excepturi.
+            Watch an intro video describing our company and services. And once
+            you are done, please come back and continue. Click the button below
+            to watch!
           </p>
         </header>
         <article class="demo-body">
@@ -37,7 +50,7 @@
           <figure class="demo-photo">
             <img
               src="img/video-bg.png"
-              alt="Woman using a smartphone"
+              alt="Two men using a smartphone"
               class="demo-img"
             />
             <button class="demo-watch">watch demo</button>
@@ -64,24 +77,39 @@
         <header class="pricing-header head-flex">
           <h2 class="pricing-heading heading-secondary">Our pricing</h2>
           <p class="pricing-paragraph heading-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            assumenda quos vitae, id cupiditate nam veritatis vel ab explicabo
-            laborum.
+            We offer quality services with a minimum amount. Start a free trial
+            today and leave us a comment. Sign up and enjoy more services.
           </p>
         </header>
         <article class="pricing-body">
           <div class="pricing-card">
             <h3 class="pricing-state">Starter</h3>
             <p class="pricing-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              porro excepturi?
+              We have selected for you services that we believe can get you
+              started. We have given access to limited services.
             </p>
             <p class="pricing-price"><sup>$</sup><strong>0</strong>/month</p>
             <button class="btn btn-starter">start free trial</button>
             <ul class="pricing-list">
               <li>
                 <i class="fa-solid fa-check"></i>
-                <span>Lorem, ipsum dolor.</span>
+                <span>Acces to the service catalogue</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Access to limited services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Select from given services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Cancel anytime</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Accessible from 8am to 4pm</span>
               </li>
             </ul>
           </div>
@@ -89,15 +117,31 @@
           <div class="pricing-card">
             <h3 class="pricing-state">Exclusive</h3>
             <p class="pricing-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              porro excepturi?
+              We exclusively selected services that we believe are important.
+              You are free to choose from the services what you like
             </p>
             <p class="pricing-price"><sup>$</sup><strong>120</strong>/month</p>
             <button class="btn btn-exclusive">start free trial</button>
             <ul class="pricing-list">
               <li>
                 <i class="fa-solid fa-check"></i>
-                <span>Lorem, ipsum dolor.</span>
+                <span>Acces to the service catalogue</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Access to limited services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Select from exclusive services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Cancel anytime</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Accessible all time</span>
               </li>
             </ul>
           </div>
@@ -105,24 +149,125 @@
           <div class="pricing-card">
             <h3 class="pricing-state">Premium</h3>
             <p class="pricing-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              porro excepturi?
+              We do not select services for you. You have access to all our
+              services and you are free to choose what best suits you.
             </p>
             <p class="pricing-price"><sup>$</sup><strong>233</strong>/month</p>
             <button class="btn btn-premium">start free trial</button>
             <ul class="pricing-list">
               <li>
                 <i class="fa-solid fa-check"></i>
-                <span>Lorem, ipsum dolor.</span>
+                <span>Acces to the service catalogue</span>
               </li>
               <li>
                 <i class="fa-solid fa-check"></i>
-                <span>Lorem, ipsum dolor.</span>
+                <span>Access to all our services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Select from all services</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Cancel anytime</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Accessible all time</span>
               </li>
             </ul>
           </div>
         </article>
       </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="testimonials-header head-flex">
+          <h2 class="testimonials-heading heading-secondary">
+            Customer testimonials
+          </h2>
+          <p class="testimonials-paragraph heading-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            reprehenderit quibusdam, fuga ipsum excepturi ratione non commodi
+            necessitatibus veritatis alias.
+          </p>
+        </div>
+        <div class="testimonials-body">
+          <div class="testimonials-carousel">
+            <div class="testimonials-slide">
+              <img
+                src="./img/customer-1.png"
+                alt="Customer 1"
+                class="testimonials-img"
+              />
+              <blockquote>
+                <p class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam recusandae aliquid sunt ad, nisi molestiae saepe
+                  odit? Iure vel laborum laudantium quis? Quisquam, veniam
+                  error!
+                </p>
+                <p class="testimonials-author">Maxwell Wanjala</p>
+                <p class="testimonials-job">CEO Roy group of companies</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonials-slide">
+              <img
+                src="./img/customer-2.png"
+                alt="Customer 2"
+                class="testimonials-img"
+              />
+              <blockquote>
+                <p class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam recusandae aliquid sunt ad, nisi molestiae saepe
+                  odit? Iure vel laborum laudantium quis? Quisquam, veniam
+                  error!
+                </p>
+                <p class="testimonials-author">Maxwell Wanjala</p>
+                <p class="testimonials-job">CEO Roy group of companies</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonials-slide">
+              <img
+                src="./img/customer-3.png"
+                alt="Customer 3"
+                class="testimonials-img"
+              />
+              <blockquote>
+                <p class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam recusandae aliquid sunt ad, nisi molestiae saepe
+                  odit? Iure vel laborum laudantium quis? Quisquam, veniam
+                  error!
+                </p>
+                <p class="testimonials-author">Maxwell Wanjala</p>
+                <p class="testimonials-job">CEO Roy group of companies</p>
+              </blockquote>
+            </div>
+            <button class="testimonials-btn btn--left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="testimonials-btn btn--right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="testimonials-dots">
+              <button class="testimonials-dot dot--fill">&nbsp;</button>
+              <button class="testimonials-dot">&nbsp;</button>
+              <button class="testimonials-dot">&nbsp;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMBEDDED MAP -->
+    <section class="map">
+      <div id="map"></div>
     </section>
   </body>
 </html>

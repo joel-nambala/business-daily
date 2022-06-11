@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server",
-    "compress": "node-sass css/style.css css/style.mi.css --output-style compressed",
-    "build": "npm-run-all compress"
+    "concat": "concat -o css/style.concat.css css/style.css css/queries.css",
+    "compress": "node-sass css/style.concat.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all concat compress"
   },
   "repository": {
     "type": "git",

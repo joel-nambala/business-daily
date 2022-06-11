@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1000px) {
+  .heading-text {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .demo-img {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .heading-text {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .demo-img {
+    width: 100%;
+  }
+}
