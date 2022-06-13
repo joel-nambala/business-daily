@@ -9,6 +9,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 56%;
+  }
+
   .demo-img {
     width: 60rem;
   }
@@ -73,6 +77,10 @@
 }
 
 @media only screen and (max-width: 570px) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
   .testimonials-carousel {
     height: 42rem;
   }

@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <!-- JavaScript links -->
-    <script defer
+    <script
+      defer
       src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
@@ -34,6 +35,46 @@
     <title>Business Daily</title>
   </head>
   <body>
+    <!-- HERO SECTION -->
+    <header class="header-hero" id="header">
+      <nav class="nav container">
+        <img src="img/white-logo.svg" alt="Logo" class="nav-logo" />
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#services" class="nav-link scroll-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link scroll-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link scroll-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#team" class="nav-link scroll-link">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link scroll-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero container">
+        <div class="hero-text-box">
+          <h1 class="hero-heading">
+            Corporate & business site of business daily
+          </h1>
+          <p class="hero-paragraph">
+            We are a digital agency that helps brands to achieve their business
+            outcomes. We see technology as a tool to create amazing things.
+          </p>
+          <a href="#services" class="hero-btn hero-btn--started">Get started</a>
+          <a href="#" class="hero-btn btn-watch">Watch demo</a>
+        </div>
+        <div class="hero-img-box">
+          <img src="img/hero-image.jpg" alt="Woman laughing" class="hero-img" />
+        </div>
+      </div>
+    </header>
+
     <!-- WATCH DEMO -->
     <section id="demo" class="demo">
       <div class="container">
@@ -53,7 +94,7 @@
               alt="Two men using a smartphone"
               class="demo-img"
             />
-            <button class="demo-watch">watch demo</button>
+            <button class="demo-watch btn-watch">watch demo</button>
           </figure>
         </article>
         <aside class="iframe">
@@ -263,6 +304,9 @@
           </div>
         </div>
       </div>
+      <a href="#header" class="scroll-link top-link"
+        ><i class="fa-solid fa-chevron-up"></i
+      ></a>
     </section>
 
     <!-- EMBEDDED MAP -->

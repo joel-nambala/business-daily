@@ -67,6 +67,109 @@ body {
   color: #fff;
 }
 
+.top-link:link,
+.top-link:visited {
+  display: inline-block;
+  background-color: #1864ab;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: 4px;
+
+  position: fixed;
+  bottom: 6rem;
+  right: 4rem;
+}
+
+.top-link:hover,
+.top-link:active {
+  background-color: #1971c2;
+}
+
+/******************/
+/* HERO SECTION */
+/******************/
+.header-hero {
+  background-color: #1864ab;
+  color: #fff;
+  padding-bottom: 9rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-item:hover .nav-link {
+  color: #d0ebff;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  text-transform: capitalize;
+  letter-spacing: 1.1;
+}
+
+.hero-paragraph {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 6.4rem;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  background-color: #fff;
+  color: #1864ab;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #1864ab;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.hero-btn--started {
+  margin-right: 2rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 /******************/
 /* WATCH DEMO */
 /******************/
@@ -94,7 +197,7 @@ body {
   font-size: 1.8rem;
   text-transform: capitalize;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 10px;
 
   position: absolute;
   top: 50%;

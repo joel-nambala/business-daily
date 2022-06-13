@@ -2,7 +2,7 @@
 
 // Select DOM Elements
 const demoModal = document.querySelector('.iframe');
-const demoModalOpen = document.querySelector('.demo-watch');
+const demoModalOpen = document.querySelectorAll('.btn-watch');
 const demoModalClose = document.querySelector('.demo-close');
 const demoVideo = document.querySelector('.iframe-video');
 
@@ -73,7 +73,10 @@ L.marker(coords)
   .openPopup();
 
 // Add event listeners
-demoModalOpen.addEventListener('click', demoWatchOpen);
+// demoModalOpen.addEventListener('click', demoWatchOpen);
+demoModalOpen.forEach(function (btnWatch) {
+  btnWatch.addEventListener('click', demoWatchOpen);
+});
 demoModalClose.addEventListener('click', demowatchClose);
 demoModal.addEventListener('click', demowatchClose);
 
