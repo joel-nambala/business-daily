@@ -3,6 +3,25 @@
     width: 70%;
   }
 
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .hero-heading {
+    font-size: 4.2rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+  }
+
   .testimonials-carousel {
     width: 100%;
   }
@@ -24,6 +43,23 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .nav-logo {
+    height: 4rem;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero-text-box {
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
   .heading-text {
     width: 90%;
   }
