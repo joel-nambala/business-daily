@@ -29,7 +29,7 @@
 
 @media only screen and (max-width: 900px) {
   html {
-    font-size: 56%;
+    font-size: 58%;
   }
 
   .demo-img {
@@ -83,6 +83,24 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .nav {
+    display: block;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: block;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-list li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
   .demo-img {
     width: 100%;
   }
@@ -109,6 +127,12 @@
     height: 60vh;
     margin: 0 auto;
     border-radius: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .links-container {
+    height: auto !important;
   }
 }
 
