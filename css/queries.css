@@ -101,6 +101,11 @@
     margin-bottom: 1rem;
   }
 
+  .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+  }
+
   .demo-img {
     width: 100%;
   }
