@@ -7,6 +7,7 @@ const navList = document.querySelector('.nav-list');
 const header = document.getElementById('header');
 const linksContainer = document.querySelector('.links-container');
 const navMenu = document.querySelector('.nav-menu');
+const scrollLink = document.querySelectorAll('.scroll-link');
 
 // Modal window
 const demoModal = document.querySelector('.iframe');
@@ -151,3 +152,11 @@ const responsiveNav = function () {
 };
 
 navMenu.addEventListener('click', responsiveNav);
+
+////////////////////////////////////////////////////////
+// Smooth scroll
+scrollLink.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+  });
+});

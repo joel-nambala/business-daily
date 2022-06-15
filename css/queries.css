@@ -80,6 +80,11 @@
   .testimonials-job {
     font-size: 1.2rem;
   }
+
+  .info-paragraph {
+    max-width: 100%;
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -156,6 +161,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .hero-btn:link,
+  .hero-btn:visited {
+    font-size: 1.6rem;
+  }
+
   .testimonials-carousel {
     height: 44rem;
   }
