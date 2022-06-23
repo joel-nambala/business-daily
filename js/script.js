@@ -9,6 +9,11 @@ const linksContainer = document.querySelector('.links-container');
 const navMenu = document.querySelector('.nav-menu');
 const scrollLink = document.querySelectorAll('.scroll-link');
 
+// Tabbed component
+const tabHeader = document.querySelector('.tab-header');
+const tabBtns = document.querySelectorAll('.btn--tab');
+const tabContent = document.querySelectorAll('.content');
+
 // Modal window
 const demoModal = document.querySelector('.iframe');
 const demoModalOpen = document.querySelectorAll('.btn-watch');
@@ -159,4 +164,23 @@ scrollLink.forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
   });
+});
+
+////////////////////////////////////////////////////////
+// Tabbed component
+tabHeader.addEventListener('click', function (e) {
+  const id = e.target.dataset.id;
+
+  if (!id) return;
+  tabBtns.forEach(function (btn) {
+    btn.classList.remove('active');
+    e.target.classList.add('active');
+  });
+
+  tabContent.forEach(function (content) {
+    content.classList.remove('active');
+  });
+
+  const element = document.getElementById(id);
+  element.classList.add('active');
 });

@@ -19,6 +19,11 @@ body {
   color: #343a40;
 }
 
+::selection {
+  background-color: #1864ab;
+  color: #fff;
+}
+
 /******************/
 /* GENERAL STYLES */
 /******************/
